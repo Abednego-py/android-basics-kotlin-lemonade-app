@@ -24,23 +24,29 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/text_action"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/lemon_select"
-        android:textSize="18sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="18sp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="330dp"
+        android:text="Click to see lemon!"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/image_lemon_state"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488" />
 
     <ImageView
-        android:id="@+id/image_lemon_state"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="165dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/lemon_tree" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
